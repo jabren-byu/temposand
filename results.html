@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tester log | Tempo</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="results">
+<div class="col">
+  <nav>
+    <a class="brand" href="index.html">Tempo</a>
+    <span class="small">Team only</span>
+  </nav>
+  <main class="tight">
+    <h1 data-focus tabindex="-1">Tester log</h1>
+    <p class="muted">This is the funnel count for this browser only. Use it when you run the test in person on one device, and clear it before each new round. For visitors on their own devices, use your analytics and your Google Form.</p>
+    <div class="scroll"><table id="funnel"><thead><tr><th>Step</th><th>Count</th><th>Of landing views</th></tr></thead><tbody></tbody></table></div>
+    <section class="block"><h2>Answers</h2><ul class="plain" id="answers"></ul></section>
+    <div class="row">
+      <button class="btn alt" type="button" id="copyLog">Copy summary</button>
+      <button class="btn alt" type="button" id="clearLog">Clear log</button>
+      <a class="btn alt" href="index.html">Back to the product page</a>
+    </div>
+    <p class="small" id="logMsg" role="status"></p>
+  </main>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

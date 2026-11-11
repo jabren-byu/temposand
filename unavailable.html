@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tempo is not available yet</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!-- ANALYTICS: paste your analytics snippet here. -->
+</head>
+<body data-page="unavailable">
+<div class="col">
+  <nav>
+    <a class="brand" href="index.html">Tempo</a>
+  </nav>
+
+  <main class="tight">
+    <div class="notice status">
+      <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h1 style="font-size:1.8rem" data-focus tabindex="-1">Tempo isn't available yet</h1>
+        <p>We can't take your pre-order right now. Nothing was charged, and we did not save the details you entered.</p>
+      </div>
+    </div>
+    <div class="notice">
+      <h2 style="font-size:1.25rem">This was a test</h2>
+      <p>We are a student team checking whether paralegals and legal assistants would want a quiet desk timer like Tempo before anyone builds one. Your honest answer to a few questions helps us decide, including if you would not buy it.</p>
+      <div id="remote" hidden><p><a id="formLink" href="#" target="_blank" rel="noopener">Answer a few quick questions</a></p></div>
+      <form id="survey" novalidate>
+        <div class="field"><span class="lab" id="scoreLab">How much would you want one on your desk? (1 is not at all, 10 is a lot)</span>
+          <div class="score" role="radiogroup" aria-labelledby="scoreLab" id="scoreGroup"></div>
+        </div>
+        <div class="field" style="margin-top:14px"><label for="stop">What would stop you from using or buying it?</label><textarea id="stop"></textarea></div>
+        <div class="field" style="margin-top:14px"><label for="dislike">What do you dislike about it?</label><textarea id="dislike"></textarea></div>
+        <div class="row" style="margin-top:16px"><button class="btn" type="submit" id="send">Send my answers</button></div>
+        <p class="small" id="thanks" role="status" hidden style="margin-top:12px">Thank you. That helps a lot.</p>
+      </form>
+    </div>
+    <div class="row"><a class="btn alt" href="index.html">Back to the product page</a></div>
+  </main>
+
+  <footer>Tempo is a student concept. Nothing is for sale or shipping yet.</footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

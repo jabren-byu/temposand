@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /checkout.html
+Disallow: /unavailable.html
+Disallow: /results.html

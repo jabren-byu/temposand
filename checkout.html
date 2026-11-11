@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Checkout | Tempo</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!-- ANALYTICS: paste your analytics snippet here. -->
+</head>
+<body data-page="checkout">
+<div class="col">
+  <nav>
+    <a class="brand" href="index.html">Tempo</a>
+    <span class="small">Pre-order checkout</span>
+  </nav>
+
+  <main class="tight">
+    <ol class="progress" aria-label="Progress"><li data-n="1" aria-current="step">Your details</li><li data-n="2">Confirmation</li></ol>
+    <h1 data-focus tabindex="-1">Checkout</h1>
+    <div class="checkout">
+      <form class="card" id="orderForm" novalidate>
+        <h2>Your details</h2>
+        <div class="field"><label for="name">Full name</label><input type="text" id="name" autocomplete="name" required></div>
+        <div class="field"><label for="email">Work email</label><input type="email" id="email" autocomplete="email" required></div>
+        <div class="field"><label for="role">Your role</label>
+          <select id="role" required>
+            <option value="">Choose one</option>
+            <option>Paralegal</option>
+            <option>Legal assistant</option>
+            <option>Attorney</option>
+            <option>Other law firm staff</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <p class="err" id="formErr" role="alert" hidden>Please fill in every field with a valid email.</p>
+        <button class="btn" type="submit">Place pre-order</button>
+        <p class="small">You will not be charged today. We take payment only when your timer ships.</p>
+      </form>
+      <aside class="summary" aria-label="Order summary">
+        <h2>Order summary</h2>
+        <div class="item"><img src="tempo-hero.jpg" width="72" height="72" alt=""><div><strong>Tempo desk sand timer</strong><div class="small">Quantity 1</div></div></div>
+        <div class="line"><span>Subtotal</span><span>$34.00</span></div>
+        <div class="line"><span>Due today</span><span>$0.00</span></div>
+        <div class="line total"><span>Total at shipping</span><span>$34.00</span></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>Tempo is a student concept. Nothing is for sale or shipping yet.</footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>
