@@ -25,6 +25,24 @@
     a.addEventListener("click", function () { log("click_preorder"); });
   });
 
+  var menuToggle = document.querySelector("[data-menu-toggle]");
+  var menu = document.querySelector("[data-menu]");
+  if (menuToggle && menu) {
+    var closeMenu = function () {
+      menu.hidden = true;
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open menu");
+    };
+    menuToggle.addEventListener("click", function () {
+      var isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      menu.hidden = isOpen;
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Open menu" : "Close menu");
+    });
+    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeMenu(); });
+  }
+
   if (page === "home") log("view_landing");
 
   if (page === "checkout") {

@@ -9,19 +9,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 <!-- ANALYTICS: paste your analytics snippet (Plausible, Google Analytics, etc.) here and on the other pages. -->
 </head>
 <body data-page="home" class="has-sticky">
 <div class="site-shell">
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="TempoSand home">TempoSand</a>
-    <nav aria-label="Primary navigation">
-      <a href="#how">How it works</a>
-      <a href="#details">Details</a>
-      <a href="#faq">Questions</a>
-      <a class="btn btn-small" href="checkout.html" data-cta>Pre-order</a>
-    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-menu" id="site-menu" data-menu hidden>
+      <nav aria-label="Primary navigation">
+        <a href="#how">How it works</a>
+        <a href="#details">Details</a>
+        <a href="#faq">Questions</a>
+        <a class="btn btn-dark" href="checkout.html" data-cta>Pre-order TempoSand <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -37,9 +42,8 @@
         <p class="hero-note"><span class="status-dot" aria-hidden="true"></span> No app. No alerts. Just one visible interval.</p>
       </div>
       <figure class="product-stage">
-        <div class="stage-kicker">TempoSand <span>·</span> 50 min</div>
         <img src="tempo-hero.jpg" width="1010" height="1002" alt="TempoSand desk sand timer with brushed metal ends and clear glass, sand flowing through the center">
-        <figcaption>One flip. One focused interval.</figcaption>
+        <figcaption class="visually-hidden">One flip. One focused interval.</figcaption>
       </figure>
     </section>
 
